@@ -3,7 +3,5 @@ for i in range(3000):
     if x == 0 and y == 0:
         break
     if y < x:
-        a = x
-        x = y
-        y = a
+        x, y = y, x
     print(x, y)
