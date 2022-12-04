@@ -6,5 +6,5 @@ for i in range(n):
     cards[suit.index(c[i][0])][int(c[i][1])-1] = True
 for i in range(4):
     for j in range(13):
-        if cards[i][j] is False:
+        if not cards[i][j]:
             print(suit[i], j+1)
